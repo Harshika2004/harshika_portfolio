@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="spaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="gradeBarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="scoreAreaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- App Window Background -->
+  <rect width="800" height="500" fill="url(#spaBg)" rx="12"/>
+
+  <!-- Window Header Bar -->
+  <rect width="800" height="48" fill="#0f172a" rx="12"/>
+  <rect y="36" width="800" height="12" fill="#0f172a"/>
+  <circle cx="28" cy="24" r="6" fill="#ef4444"/>
+  <circle cx="48" cy="24" r="6" fill="#f59e0b"/>
+  <circle cx="68" cy="24" r="6" fill="#10b981"/>
+  <rect x="120" y="12" width="380" height="24" rx="12" fill="#1e293b"/>
+  <text x="140" y="28" fill="#94a3b8" font-family="'Outfit', system-ui, sans-serif" font-size="12">https://harshika.dev/student-performance-analyzer</text>
+
+  <!-- Header Inside App -->
+  <g transform="translate(35, 65)">
+    <rect width="36" height="36" rx="8" fill="#0d9488" opacity="0.3"/>
+    <text x="10" y="25" fill="#2dd4bf" font-family="'Outfit', sans-serif" font-size="20">📊</text>
+    <text x="50" y="24" fill="#ffffff" font-family="'Outfit', system-ui, sans-serif" font-size="18" font-weight="700">Student Performance Analyzer</text>
+    <text x="50" y="40" fill="#94a3b8" font-family="'Outfit', system-ui, sans-serif" font-size="12">Academic Evaluation &amp; Cohort Analytics Platform</text>
+  </g>
+
+  <!-- Metric Badges Row -->
+  <g transform="translate(35, 125)">
+    <rect width="170" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="16" y="28" fill="#94a3b8" font-family="'Outfit', sans-serif" font-size="11">COHORT AVERAGE</text>
+    <text x="16" y="56" fill="#38bdf8" font-family="'Outfit', sans-serif" font-size="22" font-weight="800">84.2%</text>
+    <text x="95" y="56" fill="#10b981" font-family="'Outfit', sans-serif" font-size="12">↑ +5.4%</text>
+
+    <rect x="185" width="170" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="201" y="28" fill="#94a3b8" font-family="'Outfit', sans-serif" font-size="11">TOP PERCENTILE</text>
+    <text x="201" y="56" fill="#f59e0b" font-family="'Outfit', sans-serif" font-size="22" font-weight="800">96.8%</text>
+    <text x="280" y="56" fill="#f59e0b" font-family="'Outfit', sans-serif" font-size="11">Rank #1</text>
+
+    <rect x="370" width="170" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="386" y="28" fill="#94a3b8" font-family="'Outfit', sans-serif" font-size="11">RETENTION RATE</text>
+    <text x="386" y="56" fill="#10b981" font-family="'Outfit', sans-serif" font-size="22" font-weight="800">98.5%</text>
+
+    <rect x="555" width="210" height="75" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="571" y="28" fill="#94a3b8" font-family="'Outfit', sans-serif" font-size="11">SUBJECT MASTERY</text>
+    <text x="571" y="56" fill="#a855f7" font-family="'Outfit', sans-serif" font-size="20" font-weight="700">DSA &amp; DBMS</text>
+  </g>
+
+  <!-- Grade Distribution Chart Left -->
+  <g transform="translate(35, 220)">
+    <rect width="440" height="245" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="30" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="14" font-weight="700">Semester Grade Progression Trends</text>
+    
+    <!-- Grid lines -->
+    <line x1="20" y1="80" x2="415" y2="80" stroke="#334155" stroke-dasharray="3 3"/>
+    <line x1="20" y1="130" x2="415" y2="130" stroke="#334155" stroke-dasharray="3 3"/>
+    <line x1="20" y1="180" x2="415" y2="180" stroke="#334155" stroke-dasharray="3 3"/>
+
+    <!-- Progression Area & Line -->
+    <path d="M40,175 Q110,140 180,120 T320,80 T410,65 L410,210 L40,210 Z" fill="url(#scoreAreaGrad)"/>
+    <path d="M40,175 Q110,140 180,120 T320,80 T410,65" fill="none" stroke="#10b981" stroke-width="3"/>
+    <circle cx="40" cy="175" r="4" fill="#38bdf8"/>
+    <circle cx="180" cy="120" r="4" fill="#10b981"/>
+    <circle cx="320" cy="80" r="4" fill="#f59e0b"/>
+    <circle cx="410" cy="65" r="5" fill="#22c55e"/>
+
+    <text x="35" y="230" fill="#64748b" font-family="'Outfit', sans-serif" font-size="11">Sem 1</text>
+    <text x="165" y="230" fill="#64748b" font-family="'Outfit', sans-serif" font-size="11">Sem 3</text>
+    <text x="305" y="230" fill="#64748b" font-family="'Outfit', sans-serif" font-size="11">Sem 5</text>
+    <text x="395" y="230" fill="#64748b" font-family="'Outfit', sans-serif" font-size="11">Current</text>
+  </g>
+
+  <!-- Performance Heatmap Right -->
+  <g transform="translate(495, 220)">
+    <rect width="270" height="245" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="20" y="30" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="14" font-weight="700">Course Assessment Breakdown</text>
+
+    <!-- Assessment Rows -->
+    <text x="20" y="68" fill="#cbd5e1" font-family="'Outfit', sans-serif" font-size="12">Data Structures &amp; OOP</text>
+    <text x="225" y="68" fill="#10b981" font-family="'Outfit', sans-serif" font-size="12" font-weight="700">92%</text>
+    <rect x="20" y="76" width="230" height="8" rx="4" fill="#334155"/>
+    <rect x="20" y="76" width="211" height="8" rx="4" fill="#10b981"/>
+
+    <text x="20" y="112" fill="#cbd5e1" font-family="'Outfit', sans-serif" font-size="12">Database Management (SQL)</text>
+    <text x="225" y="112" fill="#38bdf8" font-family="'Outfit', sans-serif" font-size="12" font-weight="700">88%</text>
+    <rect x="20" y="120" width="230" height="8" rx="4" fill="#334155"/>
+    <rect x="20" y="120" width="202" height="8" rx="4" fill="#38bdf8"/>
+
+    <text x="20" y="156" fill="#cbd5e1" font-family="'Outfit', sans-serif" font-size="12">Operating Systems</text>
+    <text x="225" y="156" fill="#f59e0b" font-family="'Outfit', sans-serif" font-size="12" font-weight="700">86%</text>
+    <rect x="20" y="164" width="230" height="8" rx="4" fill="#334155"/>
+    <rect x="20" y="164" width="197" height="8" rx="4" fill="#f59e0b"/>
+
+    <text x="20" y="200" fill="#cbd5e1" font-family="'Outfit', sans-serif" font-size="12">Web Dev &amp; REST APIs</text>
+    <text x="225" y="200" fill="#a855f7" font-family="'Outfit', sans-serif" font-size="12" font-weight="700">90%</text>
+    <rect x="20" y="208" width="230" height="8" rx="4" fill="#334155"/>
+    <rect x="20" y="208" width="207" height="8" rx="4" fill="#a855f7"/>
+  </g>
+</svg>
